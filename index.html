@@ -31,7 +31,7 @@
 
   <form>
     <ol>
-  	 <li>What is your name? <input type="text"></li>
+  	 <li>What is your name? <input id="yourname" class="form-control" type="text"></li>
   	 <br>
   	 <li>What size of business do you want to work for?
   	 	<p>
@@ -39,7 +39,7 @@
   	 	    <input type="checkbox" name="CompanySize" value="Enterprise" id="CompanySize_0">Enterprise</label>
   	 	  <br>
   	 	  <label>
-  	 	    <input type="checkbox" name="CompanySize_" value="Startup" id="CompanySize_1">
+  	 	    <input type="checkbox" name="CompanySize" value="Startup" id="CompanySize_1">
   	 	    Small/Startup<br>
   	 	  </label>
   	 	  <br>
@@ -67,8 +67,21 @@
       	    <br>
    	      </p>
       	</li>
+        <li>Are you interested in making mobile apps?
+      	  <p>
+      	    <label>
+      	      <input type="radio" name="mobileapps" value="Yes" id="mobileapps_0">
+      	      Yes
+      	    </label>
+      	    <br>
+      	    <label>
+      	      <input type="radio" name="mobileapps" value="No" id="mobileapps_1">
+      	      No</label>
+      	    <br>
+   	      </p>
+      	</li>
     </ol>
-
+      <button type="submit" class="btn">What should I take?</button>
   </form>
 		<div class="tracts">
   	<div id="csharp">
@@ -110,10 +123,5 @@
   	<p>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.</p>
 		</div>
     </div>
-<script type="text/javascript">
-$(function() {
-	$( "#Button1" ).button();
-});
-</script>
 </body>
 </html>

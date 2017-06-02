@@ -3,36 +3,70 @@
 <head>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/scripts.js"></script>
 
 <title>Track Chooser</title>
 </head>
 <body>
- <div class="container">
+<div class="container">
   <h1>Welcome to the Epicodus Track Chooser!</h1>
 	<p>As you know, Epicodus students must decide which track they would like to pursue before they enroll. While all languages have similarities, and switching between languages and platforms is very common in both internships and jobs, applicants should still choose the track they wish to complete with care.
 
 	Currently, Epicodus offers the following tracks in Portland and Seattle:
   	<ul>
-		<li>Ruby/Rails</li>
-		<li>PHP/Drupal</li>
-		<li>Java/Android</li>
-		<li>CSS/Design</li>
-		<li>C#/.NET</li>
-	</ul>
+	  <li>Ruby/Rails</li>
+	  <li>PHP/Drupal</li>
+	  <li>Java/Android</li>
+	  <li>CSS/Design</li>
+	  <li>C#/.NET</li>
+  </ul>
 	(All tracks must complete Intro and JavaScript.)</p>
 
 	<p>This tool with help you to choose which course track you want to choose at Epicodus. Please answer the following survey questions </p>
 
 	<form>
-
-
-
-
-
-
-	</form>
+	 <ol>
+  	 <li>What is your name?<input type="text"></li>
+  	 <br>
+  	 <li>What size of business do you want to work for?
+  	 	<p>
+  	 	 <li><label>
+  	 	    <input type="checkbox" name="CompanySize" value="Enterprise" id="CompanySize_0">Enterprise</label>
+  	 	  <br>
+  	 	  <label>
+  	 	    <input type="checkbox" name="CompanySize_" value="Startup" id="CompanySize_1">
+  	 	    Small/Startup<br>
+  	 	  </label>
+  	 	  <br>
+   	  </p>
+  		 </li>
+  		 <li>Would you rather your code make pages/programs look pretty or work efficently?
+  		   <p>
+  		     <label>
+  		       <input type="checkbox" name="work-pretty" value="Work" id="work-pretty_0">Pretty</label>
+  		     <br>
+  		     <label>
+  		       <input type="checkbox" name="work-pretty" value="Pretty" id="work-pretty_1">
+  		       Efficently</label>
+  		     <br>
+  	       </p>
+  		 </li>
+      	<li>Do you enjoy working on computers and looking at a monitor all day long?
+      	  <p>
+      	    <label>
+      	      <input type="radio" name="enjoycomputers" value="Yes" id="enjoycomputers_0">
+      	      Yes
+      	    </label>
+      	    <br>
+      	    <label>
+      	      <input type="radio" name="enjoycomputers" value="No" id="enjoycomputers_1">
+      	      No</label>
+      	    <br>
+    	    </p>
+      	</li>
+      </ol>
+    </form>
 
 	<p><strong>C#</strong>
 	<br>

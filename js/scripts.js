@@ -10,11 +10,13 @@ $(document).ready(function() {
     var mobileapps_0 = $("input:radio[name=mobileapps]:checked").val();
     var mobileapps_1 = $("input:radio[name=mobileapps]:checked").val();
 
-    $("#yourName").******(yourName);
-    $("#companySize").******(companySize);
-    $("#work-pretty").******(work-pretty);
-    $("#enjoyComputers").******(enjoyComputers);
-    $("#mobileApps").******(mobileApps);
+//    $("#yourName").******(yourName);
+//    $("#companySize").******(companySize);
+//    $("#work-pretty").******(work-pretty);
+//    $("#enjoyComputers").******(enjoyComputers);
+//    $("#mobileApps").******(mobileApps);
+
+
 
 
     $("#whattract").show();

@@ -1,26 +1,24 @@
 $(document).ready(function() {
-  $("#formOne").submit(function(event) {
-    var = yourName = $("yourName").val();
-    var = companysize_0 = $("input:checkbox[name=companysize]:checked").val();
-    var = companysize_1 = $("input:checkbox[name=companysize]:checked").val();
-    var = work-pretty_0 = $("input:checkbox[name=work-pretty]:checked").val();
-    var = work_pretty_1 = $("input:checkbox[name=work-pretty]:checked").val();
-    var enjoycomputers_0 = $("input:radio[name=enjoycomputers]:checked").val();
-    var enjoycomputers_1 = $("input:radio[name=enjoycomputers]:checked").val();
-    var mobileapps_0 = $("input:radio[name=mobileapps]:checked").val();
-    var mobileapps_1 = $("input:radio[name=mobileapps]:checked").val();
+      $("#formOne").submit(function(event) {
+            event.preventDefault();
 
-//    $("#yourName").******(yourName);
-//    $("#companySize").******(companySize);
-//    $("#work-pretty").******(work-pretty);
-//    $("#enjoyComputers").******(enjoyComputers);
-//    $("#mobileApps").******(mobileApps);
+var yourName = $("yourName").val();
 
+var companySize = $("input:radio[name=companysize]:checked").val();
 
+var workPretty = $("input:radio[name=workpretty]:checked").val();
 
+var enjoyComputers = $("input:radio[name=enjoycomputers]:checked").val();
 
-    $("#whattract").show();
+var mobileApps = $("input:radio[name=mobileapps]:checked").val();
 
-    event.preventDefault();
-  });
-});
+if ((mobileApps === yes && mobileApps !== no) && enjoyComputers === yes && (companySize === startup || companySize === enterprise) && (workPretty === yes || workpPretty === no)) {
+  return ("you should take the Java course tract." + show("#java"));
+} else if (mobileApps === no && enjoyComputers === yes && (companySize === startup || companySize === enterprise) && (workPretty === yes || workPretty === no)) {
+  return ("you should take the Design and/or ruby course tracts." + $("#whattract").show("#design", "#ruby"));
+} else if (mobileApps === yes && enjoyComputers === yes && (companySize === enterprise || companySize === startup) && (workPretty === yes || workPretty === yes)) {
+  return ("#yourName" + " you should take all of the cource tracts." + show("#design" + "#csharp" + "#java" + "#php" + "#ruby"));
+} else if (enjoyComputers === no); {
+  return ("You probably should not take any of these courses if you don't like computers!");
+}
+//put code to display the results of the form here.

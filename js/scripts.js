@@ -18,7 +18,7 @@ if ((mobileApps === yes && mobileApps !== no) && enjoyComputers === yes && (comp
   return ("you should take the Design and/or ruby course tracts." + $("#whattract").show("#design", "#ruby"));
 } else if (mobileApps === yes && enjoyComputers === yes && (companySize === enterprise || companySize === startup) && (workPretty === yes || workPretty === yes)) {
   return ("#yourName" + " you should take all of the cource tracts." + show("#design" + "#csharp" + "#java" + "#php" + "#ruby"));
-} else if (enjoyComputers === no); {
+} else if(enjoyComputers === no); {
   return ("You probably should not take any of these courses if you don't like computers!");
 }
 //put code to display the results of the form here.

@@ -2,123 +2,125 @@
 <html>
 
 <head>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/scripts.js"></script>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
 
-	<title>Track Chooser</title>
+  <title>Track Chooser</title>
 </head>
 
 <body>
-	<div class="container">
-		<h1>Welcome to the Epicodus Track Chooser!</h1>
-		<p>As you know, Epicodus students must decide which track they would like to pursue before they enroll. While all languages have similarities, and switching between languages and platforms is very common in both internships and jobs, applicants should
-			still choose the track they wish to complete with care. Currently, Epicodus offers the following tracks in Portland and Seattle:
-			<ul>
-				<li>Ruby/Rails</li>
-				<li>PHP/Drupal</li>
-				<li>Java/Android</li>
-				<li>CSS/Design</li>
-				<li>C#/.NET</li>
-			</ul>
-			(All tracks must complete Intro and JavaScript.)
+  <div class="container">
+    <h1 id="welcome">Welcome to the Epicodus Track Chooser!</h1>
+    <p>As you know, Epicodus students must decide which track they would like to pursue before they enroll. While all languages have similarities, and switching between languages and platforms is very common in both internships and jobs, applicants should
+      still choose the track they wish to complete with care. Currently, Epicodus offers the following tracks in Portland and Seattle:
+      <ul>
+        <li>Ruby/Rails</li>
+        <li>PHP/Drupal</li>
+        <li>Java/Android</li>
+        <li>CSS/Design</li>
+        <li>C#/.NET</li>
+      </ul>
+      (All tracks must complete Intro and JavaScript.)
 
-			<p>This tool with help you to choose which course track you want to choose at Epicodus. Please answer the following survey questions </p>
+      <p>This tool with help you to choose which course track you want to choose at Epicodus. Please answer the following survey questions.  If you don't have any preference please just skip answering that question.</p>
 
-			<form>
-				<ol>
-					<li>What is your name? <input id="yourname" class="form-control" type="text"></li>
-					<br>
-					<li>What size of business do you want to work for?
-						<p>
-							<label>
+      <form>
+        <ol>
+          <li>What is your name? <input id="yourname" class="form-control" type="text"></li>
+          <br>
+          <li>What size of business do you want to work for?
+            <p>
+              <label>
   	 	    <input type="radio" name="companysize" value="enterprise" id="companysize">Enterprise</label>
-							<br>
-							<label>
-  	 	    <input type="radio" name="companysize" value="startup" id="companysize">
-  	 	    Small/Startup<br>
-  	 	  </label>
-							<br>
-							<li>Would you rather your code make pages/programs look pretty or work efficently?
-								<p>
-									<label>
+              <br>
+            <label>
+  	 	      <input type="radio" name="companysize" value="startup" id="companysize">
+  	 	       Small/Startup<br>
+  	 	      </label>
+              <br>
+              <li>Would you rather your code make pages/programs look pretty or work efficently?
+                <p>
+                  <label>
   		       <input type="radio" name="workpretty" value="work" id="work_pretty">Pretty</label>
-									<br>
-									<label>
+                  <br>
+                  <label>
   		       <input type="radio" name="workpretty" value="pretty" id="workpretty">
   		       Efficently</label>
-									<br>
-								</p>
-							</li>
-							<li>Do you enjoy working on computers and looking at a monitor all day long?
-								<p>
-									<label>
+                  <br>
+                </p>
+              </li>
+              <li>Do you enjoy working on computers and looking at a monitor all day long?
+                <p>
+                  <label>
       	      <input type="radio" name="enjoycomputers" value="yes" id="enjoycomputers">
       	      Yes
       	    </label>
-									<br>
-									<label>
+                  <br>
+                  <label>
       	      <input type="radio" name="enjoycomputers" value="no" id="enjoycomputers">
       	      No</label>
-									<br>
-								</p>
-							</li>
-							<li>Are you interested in making mobile apps?
-								<p>
-									<label>
-      	      <input type="radio" name="mobileapps" value="=yes" id="mobileapps">
+                  <br>
+                </p>
+              </li>
+              <li>Are you interested in making mobile apps?
+                <p>
+                  <label>
+      	      <input type="radio" name="mobileapps" value="yes" id="mobileapps">
       	      Yes
       	    </label>
-									<br>
-									<label>
+                  <br>
+                  <label>
       	      <input type="radio" name="mobileapps" value="no" id="mobileapps">
       	      No</label>
-									<br>
-								</p>
-							</li>
-				</ol>
-				<button type="submit" class="btn">What should I take?</button>
-			</form>
-			<p id="results"></p>
-			<div class="tracts">
-				<div id="csharp">
-					<p class="text-center"><strong>C#</strong>
-						<br> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also
-						been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working
-						for a larger company on business software, C# is a great choice.</p>
-				</div>
-				<br>
-				<div id="java">
-					<p class="text-center"><strong>JAVA</strong>
-						<br> Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces.
-						Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance
-						applications, Java could be a good language to learn.</p>
-				</div>
-				<br>
-				<div id="php">
-					<p class="text-center"><strong>PHP</strong>
-						<br> PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility of the
-						language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of government websites,
-						or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
-				</div>
-				<br>
-				<div id="ruby">
-					<p class="text-center"><strong>RUBY</strong>
-						<br> Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became
-						popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.</p>
-				</div>
-				<br>
-				<div id="design">
-					<p class="text-center"><strong>DESIGN</strong>
-						<br> Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site
-						visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces.
-					</p>
-				</div>
-				<p>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks
-					including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.</p>
-			</div>
-	</div>
+                  <br>
+                </p>
+              </li>
+        </ol>
+        <button type="submit" class="btn">What should I take?</button>
+      </form>
+      <p id="results"></p>
+      <div class="tracts">
+        <div>
+          <p id="csharp" class="text-center"><strong>C#</strong>
+            <br> C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has
+            also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea
+            of working for a larger company on business software, C# is a great choice.</p>
+        </div>
+        <br>
+        <div>
+          <p id="java" class="text-center"><strong>JAVA</strong>
+            <br> Java is also a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces.
+            Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance
+            applications, Java could be a good language to learn.</p>
+        </div>
+        <br>
+        <div>
+          <p id="php" class="text-center"><strong>PHP</strong>
+            <br> PHP is by far the most popular backend language today, with 80 percent of websites utilizing it 'server-side'. It is perhaps best known for it's use in content management systems like Wordpress, Drupal, and Joomla. But the versatility
+            of the language and the frameworks it powers make employment options numerous and diverse. If you're keen to work for a fast paced agency that builds websites for lots of clients, or maintain the security and stability of a huge complex of
+            government websites, or if you like the idea of building out small sites for brands, businesses, and organizations - In any of these cases, PHP would be a great way to go.</p>
+        </div>
+        <br>
+        <div>
+          <p id="ruby" class="text-center"><strong>RUBY</strong>
+            <br> Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby
+            became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product
+            quickly.
+          </p>
+        </div>
+        <br>
+        <div>
+          <p id="design" class="text-center"><strong>DESIGN</strong>
+            <br> Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your
+            site visitors. Web Design is a crucial component in web development, and students who learn design will be able to engineer positive and interactive user experiences through innovative interfaces.
+          </p>
+        </div>
+        <p>Though each language has its niche, there is plenty of crossover. For example, Rails' popularity inspired copycats in just about every language, and so you'll see interactive web applications written in C#, Java, and PHP, with Rails-like frameworks
+          including .NET MVC, Spring, and Laravel. Even at one company, you might find them using PHP for their marketing site, Ruby for their web application, and Java for their back-end processing.</p>
+      </div>
+  </div>
 </body>
 
 </html>

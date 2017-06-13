@@ -1,3 +1,19 @@
-.tracts {
+#csharp, #java, #php, #ruby, #design {
   display: none;
+}
+
+#ruby {
+	color: red;
+}
+
+#csharp {
+	font-style: italic; 
+}
+
+#design {
+	font-variant: small-caps;
+}
+
+#welcome {
+	color: green;
 }

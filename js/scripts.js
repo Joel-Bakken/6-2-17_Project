@@ -15,14 +15,21 @@ $(document).ready(function() {
     if ((mobileApps === "yes" && enjoyComputers === "yes" && companySize === "startup") || (mobileApps === "yes" && enjoyComputers === "yes" && companySize === "enterprise")) {
     $("#design").show();
 
-      } else if (mobileApps === "no" && enjoyComputers === "yes" && workpretty === "pretty" && companysize === "startup") {
-      $("#csharp").show();
-
+      } else if (mobileApps === "no" && enjoyComputers === "yes" && workPretty === "pretty" && companySize === "startup") {
+        $("#csharp").show();
+        $("#ruby").hide();
+        $("#design").hide();
+        $("#php").hide();
       } else if ((mobileApps === "no" && enjoyComputers === "yes") || (mobileApps === "yes" && enjoyComputers === "yes" && companySize === "enterprise")) {
         $("#ruby").show();
-
-      } else if (workpretty === "pretty" && enjoycomputers === "no") {
-        $("#php")
+        $("#csharp").hide();
+        $("#design").hide();
+        $("#php").hide();
+      } else if (workPretty === "pretty" && enjoyComputers === "no") {
+        $("#php").show
+        $("#ruby").hide();
+        $("#design").hide();
+        $("#csharp").hide();
       }  
   });
 });

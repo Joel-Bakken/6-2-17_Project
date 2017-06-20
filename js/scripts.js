@@ -26,7 +26,7 @@ $(document).ready(function() {
         $("#design").hide();
         $("#php").hide();
       } else if (workPretty === "pretty" && enjoyComputers === "no") {
-        $("#php").show
+        $("#php").show();
         $("#ruby").hide();
         $("#design").hide();
         $("#csharp").hide();
